@@ -23,12 +23,12 @@ while True:
    print("")
    print("Round " + str(r))
    if r == 1:
-      DisplayBoardAlpha4.Board(P1Place, P2Place, i)
+      DisplayBoard.Board(P1Place, P2Place, i)
       if P1vPlace != None:
-         DisplayBoardAlpha4.Volcano(P1vPlace, P2vPlace, 6)
+         DisplayBoard.Volcano(P1vPlace, P2vPlace, 6)
       elif P2vPlace != None:
-         DisplayBoardAlpha4.Volcano(P1vPlace, P2vPlace, 6)
-   d = DiceRollAlpha4.P1(P1Place, P1vPlace)
+         DisplayBoard.Volcano(P1vPlace, P2vPlace, 6)
+   d = DiceRoll.P1(P1Place, P1vPlace)
    d = d.split()
    if P1vPlace == None:
       P1Place = int(d[0])
@@ -64,11 +64,11 @@ while True:
             print("")
          s = 5
    print("")
-   DisplayBoardAlpha4.Board(P1Place, P2Place, i)
+   DisplayBoard.Board(P1Place, P2Place, i)
    if P1vPlace != None:
-      DisplayBoardAlpha4.Volcano(P1vPlace, P2vPlace, 6)
+      DisplayBoard.Volcano(P1vPlace, P2vPlace, 6)
    elif P2vPlace != None:
-      DisplayBoardAlpha4.Volcano(P1vPlace, P2vPlace, 6)
+      DisplayBoard.Volcano(P1vPlace, P2vPlace, 6)
    print("")
    print("You rolled a " + str(n) + "!")
    print("")
@@ -102,7 +102,7 @@ while True:
    print("")
    c = input("Press ' enter' to continue")
    print("")
-   d = DiceRollAlpha4.P2(P2Place, P2vPlace)
+   d = DiceRoll.P2(P2Place, P2vPlace)
    d = d.split()
    if P2vPlace == None:
       P2Place = int(d[0])
@@ -138,11 +138,11 @@ while True:
          print("")
       s = 5
    print("")
-   DisplayBoardAlpha4.Board(P1Place, P2Place, i)
+   DisplayBoard.Board(P1Place, P2Place, i)
    if P1vPlace != None:
-      DisplayBoardAlpha4.Volcano(P1vPlace, P2vPlace, 6)
+      DisplayBoard.Volcano(P1vPlace, P2vPlace, 6)
    elif P2vPlace != None:
-      DisplayBoardAlpha4.Volcano(P1vPlace, P2vPlace, 6)
+      DisplayBoard.Volcano(P1vPlace, P2vPlace, 6)
    print("")
    print("You rolled a " + str(n) + "!")
    print("")
