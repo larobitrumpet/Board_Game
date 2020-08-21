@@ -1,6 +1,6 @@
 import random
-import DiceRollAlpha4
-import DisplayBoardAlpha4
+import DiceRoll
+import DisplayBoard
 P1Place = 0
 P2Place = 0
 r = 0
